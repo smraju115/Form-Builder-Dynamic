@@ -1,0 +1,50 @@
+﻿@model FBD_QIA_Task.Models.FormViewModels.FormViewModel
+@{
+    ViewData["Title"] = "Preview Form";
+}
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h4>@Model.Title</h4>
+    </div>
+    <div class="card-body">
+        <form>
+            @for (int i = 0; i < Model.Fields.Count; i++)
+            {
+                var fld = Model.Fields[i];
+                <div class="mb-3">
+                    <label class="form-label">
+                        @fld.Label
+                        @if (fld.IsRequired)
+                        {
+                            <span class="text-danger">*</span>
+                        }
+                    </label>
+                    <select class="form-select" disabled>
+                        <option value="">Select Item</option>
+                        <option selected="@(fld.SelectedOption == "Option 1" ? "selected" : null)">Option 1</option>
+                        <option selected="@(fld.SelectedOption == "Option 2" ? "selected" : null)">Option 2</option>
+                        <option selected="@(fld.SelectedOption == "Option 3" ? "selected" : null)">Option 3</option>
+                    </select>
+                    @if (!string.IsNullOrEmpty(fld.SelectedOption))
+                    {
+                        <div class="form-text">Selected: @fld.SelectedOption</div>
+                    }
+                </div>
+            }
+
+            <div class="card-footer mt-2">
+                <button type="submit" class="btn btn-success btn-sm"><i class="bi bi-floppy"></i> Save</button>
+                <a asp-action="Index" class="btn btn-secondary btn-sm">Back to List</a>
+            </div>
+        </form>
+
+       
+
+    </div>
+</div>
+
+
+

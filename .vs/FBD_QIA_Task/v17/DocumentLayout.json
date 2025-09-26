@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|f:\\home practice\\faisal vai work\\fbd_qia_task\\fbd_qia_task\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|solutionrelative:fbd_qia_task\\controllers\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|f:\\home practice\\faisal vai work\\fbd_qia_task\\fbd_qia_task\\models\\formviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|solutionrelative:fbd_qia_task\\models\\formviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|f:\\home practice\\faisal vai work\\fbd_qia_task\\fbd_qia_task\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|solutionrelative:fbd_qia_task\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|f:\\home practice\\faisal vai work\\fbd_qia_task\\fbd_qia_task\\views\\form\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|solutionrelative:fbd_qia_task\\views\\form\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|f:\\home practice\\faisal vai work\\fbd_qia_task\\fbd_qia_task\\views\\form\\preview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|solutionrelative:fbd_qia_task\\views\\form\\preview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|f:\\home practice\\faisal vai work\\fbd_qia_task\\fbd_qia_task\\views\\form\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|solutionrelative:fbd_qia_task\\views\\form\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|f:\\home practice\\faisal vai work\\fbd_qia_task\\fbd_qia_task\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA7804B4-FFF4-4CD4-A3ED-A4989CA44133}|FBD_QIA_Task\\FBD_QIA_Task.csproj|solutionrelative:fbd_qia_task\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FBD_QIA_Task\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FBD_QIA_Task\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:23:00.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Preview.cshtml",
+              "DocumentMoniker": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Form\\Preview.cshtml",
+              "RelativeDocumentMoniker": "FBD_QIA_Task\\Views\\Form\\Preview.cshtml",
+              "ToolTip": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Form\\Preview.cshtml",
+              "RelativeToolTip": "FBD_QIA_Task\\Views\\Form\\Preview.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:21:38.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Form\\Index.cshtml",
+              "RelativeDocumentMoniker": "FBD_QIA_Task\\Views\\Form\\Index.cshtml",
+              "ToolTip": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Form\\Index.cshtml",
+              "RelativeToolTip": "FBD_QIA_Task\\Views\\Form\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:18:26.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Form\\Create.cshtml",
+              "RelativeDocumentMoniker": "FBD_QIA_Task\\Views\\Form\\Create.cshtml",
+              "ToolTip": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Views\\Form\\Create.cshtml",
+              "RelativeToolTip": "FBD_QIA_Task\\Views\\Form\\Create.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-24T18:16:35.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\appsettings.json",
+              "RelativeDocumentMoniker": "FBD_QIA_Task\\appsettings.json",
+              "ToolTip": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\appsettings.json",
+              "RelativeToolTip": "FBD_QIA_Task\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-24T18:03:31.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Controllers\\FormController.cs",
+              "RelativeDocumentMoniker": "FBD_QIA_Task\\Controllers\\FormController.cs",
+              "ToolTip": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Controllers\\FormController.cs",
+              "RelativeToolTip": "FBD_QIA_Task\\Controllers\\FormController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:02:48.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormViewModels.cs",
+              "DocumentMoniker": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Models\\FormViewModels.cs",
+              "RelativeDocumentMoniker": "FBD_QIA_Task\\Models\\FormViewModels.cs",
+              "ToolTip": "F:\\Home Practice\\Faisal Vai Work\\FBD_QIA_Task\\FBD_QIA_Task\\Models\\FormViewModels.cs",
+              "RelativeToolTip": "FBD_QIA_Task\\Models\\FormViewModels.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T18:01:41.222Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

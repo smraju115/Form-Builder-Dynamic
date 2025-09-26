@@ -1,0 +1,160 @@
+﻿@model FBD_QIA_Task.Models.FormViewModels.FormViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="bi bi-exclamation-triangle-fill"></i> @TempData["Error"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+
+<div class="card">
+    <h5 class="card-header"> <i class="bi bi-tags-fill"></i> Dynamic Form Builder</h5>
+    <div class="card-body">
+        <form asp-action="Create" method="post" id="formCreate">
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div id="fieldsContainer">
+                @for (int i = 0; i < Model.Fields.Count; i++)
+                {
+                    <div class="field-row mb-3">
+                        <div class="row g-2 align-items-end">
+                            <div class="col-md-5">
+                                <label asp-for="Fields[@i].Label" class="form-label"></label>
+                                <input asp-for="Fields[@i].Label" class="form-control" />
+                                <span asp-validation-for="Fields[@i].Label" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Is Required</label>
+                                <input type="hidden" name="Fields[@i].IsRequired" value="false" />
+                                <input type="checkbox" name="Fields[@i].IsRequired" value="true"
+                                       class="form-check-input" @(Model.Fields[i].IsRequired ? "checked" : "") />
+                            </div>
+                            <div class="col-md-3">
+                                <label asp-for="Fields[@i].SelectedOption"></label>
+                                <select asp-for="Fields[@i].SelectedOption" class="form-select">
+                                    <option value="">Select Item</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                                <span asp-validation-for="Fields[@i].SelectedOption" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-1">
+                                <button type="button" class="btn btn-danger btn-sm remove-field">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="card-footer mt-3">
+                <button type="button" id="addMore" class="btn btn-info btn-sm">Add More</button>
+                <button type="submit" class="btn btn-success btn-sm"><i class="bi bi-floppy"></i> Save</button>
+                <button type="reset" class="btn btn-secondary btn-sm">Clear</button>
+                <a asp-action="Index" class="btn btn-dark btn-sm">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        var fieldTemplate = function (index) {
+            return `
+            <div class="field-row mb-3" data-index="${index}">
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-5">
+                        <label>Label</label>
+                        <input name="Fields[${index}].Label" class="form-control" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>Is Required</label>
+                        <input type="hidden" name="Fields[${index}].IsRequired" value="false" />
+                        <input type="checkbox" name="Fields[${index}].IsRequired" value="true" class="form-check-input" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>Selected Option</label>
+                        <select name="Fields[${index}].SelectedOption" class="form-select">
+                            <option value="">Select Item</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-danger btn-sm remove-field"><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+            </div>`;
+        };
+
+               $(function () {
+            var index = $('#fieldsContainer .field-row').length;
+
+            // Add new field
+            $('#addMore').on('click', function () {
+                $('#fieldsContainer').append(fieldTemplate(index));
+                index++;
+            });
+
+            // Remove field
+            $('#fieldsContainer').on('click', '.remove-field', function () {
+                $(this).closest('.field-row').remove();
+            });
+
+            // Checkbox change dynamically validates dropdown
+            $('#fieldsContainer').on('change', 'input[type=checkbox]', function () {
+                var row = $(this).closest('.field-row');
+                var select = row.find('select');
+
+                if ($(this).is(':checked')) {
+                    if (!select.val()) select.addClass('is-invalid');
+                } else {
+                    select.removeClass('is-invalid');
+                }
+            });
+
+            // Form submit validation
+            $('#formCreate').on('submit', function (e) {
+                var isValid = true;
+
+                $('#fieldsContainer .field-row').each(function () {
+                    var required = $(this).find('input[type=checkbox]').is(':checked');
+                    var sel = $(this).find('select').val();
+
+                    if (required && (!sel || sel === "")) {
+                        isValid = false;
+                        $(this).find('select').addClass('is-invalid');
+                    } else {
+                        $(this).find('select').removeClass('is-invalid');
+                    }
+                });
+
+                if (!isValid) {
+                    e.preventDefault();
+                    alert('Please fill required dropdown selections.');
+                }
+            });
+
+            // Clear button removes validation errors
+            $('#formCreate').on('reset', function () {
+                $('#fieldsContainer select').removeClass('is-invalid');
+            });
+        });
+    </script>
+}
