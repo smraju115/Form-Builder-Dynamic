@@ -22,6 +22,7 @@ This project is a **Dynamic Form Builder** built with ASP.NET Core MVC and Boots
 - **ASP.NET Core MVC**
 - **SQL Server**
 - **Bootstrap 5**
+- **JavaScript**
 - **jQuery 3.6**
 - **Bootstrap Icons**
 
